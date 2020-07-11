@@ -60,6 +60,16 @@ class App extends React.Component {
     });
   };
 
+  deleteCompleted = (e) => {
+    console.log("Delete completed");
+    e.preventDefault();
+    this.setState({
+      tasks: this.state.tasks.filter((task) => {
+        return !task.completed;
+      }),
+    });
+  };
+
   render() {
     return (
       <div className="App">
@@ -67,6 +77,7 @@ class App extends React.Component {
         <TodoForm addTask={this.addTask} />
         <TodoList
           toggleCompleted={this.toggleCompleted}
+          deleteCompleted={this.deleteCompleted}
           tasks={this.state.tasks}
         />
       </div>
