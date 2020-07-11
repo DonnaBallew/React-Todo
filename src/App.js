@@ -3,6 +3,7 @@ import "./styling.css";
 
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
+import Searchbar from "./components/Searchbar";
 
 const data = [
   {
@@ -83,6 +84,7 @@ class App extends React.Component {
             toggleCompleted={this.toggleCompleted}
             tasks={this.state.tasks}
           />
+          {/* <Searchbar /> */}
         </div>
       </div>
     );

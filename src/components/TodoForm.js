@@ -1,4 +1,5 @@
 import React from "react";
+import "../styling.css";
 
 class TodoForm extends React.Component {
   constructor() {
@@ -26,7 +27,7 @@ class TodoForm extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <input
             type="text"
-            name="todo"
+            name="todofield"
             onChange={this.handleChanges}
             placeholder="Enter new task..."
           />
