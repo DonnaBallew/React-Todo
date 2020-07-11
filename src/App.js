@@ -76,8 +76,8 @@ class App extends React.Component {
         <h1>Todo List</h1>
         <TodoForm addTask={this.addTask} />
         <TodoList
-          toggleCompleted={this.toggleCompleted}
           deleteCompleted={this.deleteCompleted}
+          toggleCompleted={this.toggleCompleted}
           tasks={this.state.tasks}
         />
       </div>
