@@ -6,13 +6,33 @@ class App extends React.Component {
   // this component is going to take care of state, and any change handlers you need to work with your state
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      data: [
+        {
+          task: "30 minutes of Yoga",
+          id: 1,
+          completed: false
+        }
+        {
+          task: "Make dinner",
+          id: 2,
+          completed: false
+        }
+        {
+          task: "Study Class Components",
+          id: 3,
+          completed: false
+        },
+        
+      ]
+     
+   
   }
 
   render() {
     return (
       <div>
-        <h2>Welcome to your Todo App!</h2>
+        <TodoForm />
       </div>
     );
   }
